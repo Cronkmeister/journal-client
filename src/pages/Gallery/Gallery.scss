@@ -1,0 +1,38 @@
+@use "../../styles/global.scss" as *;
+
+.gallery {
+  background-color: $primary-color-1-black;
+  color: $primary-color-2-white;
+  &__wrapper {
+    @include margin;
+  }
+  &__button {
+  color: $primary-color-2-white;
+  border: solid 1px $primary-color-1-black;
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  padding: 4px;
+  border-radius: 50%;
+  transition: ease-in 0.15s;
+  @include tablet {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+  &:hover {
+    border: solid 1px $primary-color-2-white;
+    cursor: pointer;
+  }
+  }
+}
+
+.button-divider {
+  height: 1.6rem;
+  width: 1px;
+  background-color: aliceblue;
+  margin-left: 0.8rem;
+  margin-right: -4px;
+  @include tablet {
+    height: 2rem;
+  }
+
+}

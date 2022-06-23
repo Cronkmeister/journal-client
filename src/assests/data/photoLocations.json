@@ -1,0 +1,96 @@
+{
+  "type": "PhotoCollection",
+  "entries": [
+    {
+      "category": "Hike",
+      "properties": {
+        "ENTRY_ID": 1,
+        "DATE": "2021-08-14",
+        "LOCATION": "Lake Lovely Water",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.784764, -123.250995]
+      }
+    },
+    {
+      "category": "Hike",
+      "properties": {
+        "ENTRY_ID": 2,
+        "DATE": "2019-11-16",
+        "LOCATION": "Seymour Mountain",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.387265, -122.940852]
+      }
+    },
+    {
+      "category": "Camping",
+      "properties": {
+        "ENTRY_ID": 3,
+        "DATE": "2021-06-12",
+        "LOCATION": "Hornby Island",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.521883, -124.64537]
+      }
+    },
+    {
+      "category": "Skiing",
+      "properties": {
+        "ENTRY_ID": 4,
+        "DATE": "2021-12-25",
+        "LOCATION": "Whistler",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [50.116322, -122.957359]
+      }
+    },
+    {
+      "category": "Camping",
+      "properties": {
+        "ENTRY_ID": 5,
+        "DATE": "2021-08-18",
+        "LOCATION": "Garibaldi Park",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.973645, -122.943565]
+      }
+    },
+    {
+      "category": "City",
+      "properties": {
+        "ENTRY_ID": 6,
+        "DATE": "2022-01-06",
+        "LOCATION": "Kitsilano",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.27497, -123.154232]
+      }
+    },
+    {
+      "category": "Hike",
+      "properties": {
+        "ENTRY_ID": 7,
+        "DATE": "2021-09-24",
+        "LOCATION": "West Lion",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.445691, -123.199106]
+      }
+    }
+  ]
+}

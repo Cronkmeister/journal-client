@@ -1,0 +1,28 @@
+@use "../../styles/global.scss" as *;
+
+.slide {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transform: scale(1);
+}
+.slide.active {
+  opacity: 1;
+}
+.arrow {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  opacity: 0.1;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.3;
+  }
+}
+.left {
+  left: 1rem;
+  top: 50%;
+}
+.right {
+  top: 50%;
+  right: 1rem;
+}

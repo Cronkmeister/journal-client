@@ -1,0 +1,94 @@
+@use "../../styles/global.scss" as *;
+
+.new {
+  background: url(../../assests/images/mountain01.jpg);
+  background-position: center;
+  background-size: cover;
+  color: $primary-color-2-white;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+
+  &__wrapper {
+    @include margin;
+
+    // opacity: 0.9;
+    @include desktop {
+      max-width: 850px;
+      margin: auto;
+    }
+  }
+  &__form {
+    background-color: $primary-color-1-black-opacity;
+    margin-top: 5rem;
+  }
+  &__form-heading {
+    @include page-header;
+    @include header-padding;
+    @include component-gutter;
+  }
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      @include body-copy;
+      @include component-gutter;
+      @include tablet {
+        width: 50%;
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      @include component-gutter;
+      @include body-copy;
+      @include tablet {
+        width: 50%;
+      }
+    }
+  }
+  &__form-file-input {
+    color: $primary-color-2-white;
+  }
+  &__form-label {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  &__form-input {
+    background-color: inherit;
+    color: $primary-color-2-white;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px $primary-color-2-white;
+    padding: 0.5rem 0 0.2rem 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__form-textarea {
+    outline: none;
+    resize:vertical;
+    height: 4rem;
+    @include body-copy;
+  }
+  &__form-submit {
+    @include component-margin-top-bottom;
+    @include CTA-button;
+    @include component-gutter;
+
+    &--container {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+  }
+}

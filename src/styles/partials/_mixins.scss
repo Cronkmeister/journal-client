@@ -1,0 +1,186 @@
+@use "./_variables" as *;
+
+// Screen sizes //
+
+@mixin tablet {
+  @media Screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+// flex - box //
+
+@mixin display-flex($direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+//  logo //
+@mixin logo {
+  height: 25px;
+  width: 120px;
+}
+
+// type kit //
+@mixin page-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 2.0625rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
+@mixin section-header {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+}
+@mixin subheader {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+  }
+}
+@mixin body-copy {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+}
+@mixin labels-buttons {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+//margins and padding
+@mixin margin {
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+  @include tablet {
+    margin-left: $tablet-margin;
+    margin-right: $tablet-margin;
+  }
+  @include desktop {
+    margin: auto;
+    max-width: 1020px;
+  }
+}
+@mixin component-gutter {
+  margin-left: $mobile-margin;
+  margin-right: $mobile-margin;
+  @include tablet {
+    margin-left: $tablet-margin;
+    margin-right: $tablet-margin;
+  }
+}
+@mixin component-gutter-small {
+  margin-left: calc($mobile-margin/2);
+  margin-right: calc($mobile-margin/2);
+  @include tablet {
+    margin-left: calc($tablet-margin/2);
+    margin-right: calc($tablet-margin/2);
+  }
+}
+
+@mixin header-padding {
+  padding-top: $mobile-header-padding-top;
+  padding-bottom: $mobile-padding;
+  @include tablet {
+    padding-top: $tablet-header-padding-top;
+    padding-bottom: $tablet-padding;
+  }
+  @include desktop {
+    padding-top: $tablet-header-padding-top;
+    padding-bottom: $tablet-padding;
+  }
+}
+@mixin component-padding {
+  padding: $mobile-padding;
+  @include tablet {
+    padding: $tablet-padding;
+  }
+}
+
+@mixin component-margin {
+  margin: $mobile-margin;
+  @include tablet {
+    margin: $tablet-margin;
+  }
+}
+@mixin component-padding-top-bottom {
+  padding-top: $mobile-padding;
+  padding-bottom: $mobile-padding;
+  @include tablet {
+    padding-top: $tablet-padding;
+    padding-bottom: $tablet-padding;
+  }
+}
+
+@mixin component-margin-top-bottom-flex {
+  margin-top: calc($mobile-margin/2);
+  margin-bottom: calc($mobile-margin/2);
+  @include tablet {
+    margin-top: calc($tablet-margin/2);
+    margin-bottom: calc($tablet-margin/2);
+  }
+}
+
+@mixin component-margin-top-bottom {
+  margin-top: $mobile-margin;
+  margin-bottom: $mobile-margin;
+  @include tablet {
+    margin-top: $tablet-margin;
+    margin-bottom: $tablet-margin;
+  }
+}
+
+//buttons
+@mixin CTA-button {
+  @include labels-buttons;
+  @include component-margin-top-bottom;
+  background-color: $primary-color-1-black;
+  color: $primary-color-2-white;
+  text-align: center;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2rem;
+  border: solid 1px $primary-color-1-black;
+  transition: ease-in 0.25s;
+  width: 80px;
+  @include tablet {
+    width: 80px;
+  }
+
+  &:hover {
+    // background-color: $secondary-color-1-dark-grey;
+    border: solid 1px $primary-color-2-white;
+    cursor: pointer;
+  }
+}

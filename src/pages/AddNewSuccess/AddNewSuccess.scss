@@ -1,0 +1,14 @@
+@use "../../styles/global.scss" as *;
+
+.success {
+  text-align: center;
+}
+.success__button-container {
+  @include display-flex(row, space-around, center);
+}
+.success-button {
+  @include component-margin-top-bottom;
+  @include CTA-button;
+  @include component-gutter;
+  text-decoration: none;
+}

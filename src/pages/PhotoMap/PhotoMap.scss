@@ -1,0 +1,15 @@
+@use "../../styles/global.scss" as *;
+
+.info-box {
+  color: $primary-color-1-black;
+  font-family: "Roboto Mono";
+  &__location {
+    @include subheader;
+  }
+  &__date {
+    @include body-copy;
+  }
+  &__category {
+    @include body-copy;
+  }
+}

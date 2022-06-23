@@ -1,0 +1,65 @@
+@use "../../styles/global.scss" as *;
+
+.welcome {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  &__container-left {
+    width: 60%;
+    background-image: url(../../assests/images/lilies.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  &__container-right {
+    background-color: $primary-color-1-black;
+    width: 40%;
+    @include display-flex(column, center, center);
+  }
+  &__title {
+    @include body-copy;
+    @include component-margin-top-bottom-flex;
+    color: $primary-color-2-white;
+    text-align: center;
+  }
+  &__button-box {
+    @include display-flex(column, center, center);
+  }
+
+  &__button {
+    @include CTA-button;
+    @include component-margin-top-bottom-flex;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  &__form {
+    color: $primary-color-2-white;
+    @include display-flex(column, center, center);
+    width: 60%;
+  }
+  &__form-title {
+    @include component-margin-top-bottom;
+    @include body-copy;
+  }
+  &__form-label {
+    @include body-copy;
+    align-self: flex-start;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  &__form-input {
+    color: $primary-color-2-white;
+    background-color: $primary-color-1-black;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px $primary-color-2-white;
+    padding: 0.5rem 0 0.2rem 0;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-button {
+    @include CTA-button;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../styles/global.scss" as *;
+
+
+.edit__background-container {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 90vh;
+    
+}
+.edit__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // position: absolute;
+}
+
+.edit__button-back {
+    @include CTA-button;
+}
+
+.edit__saved {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    @include body-copy;
+}
